@@ -1,0 +1,270 @@
+body {
+    font-family: 'Merriweather Sans', sans-serif;
+   background-color: rgba(0, 0, 0, 0.945);
+    
+}
+
+h2 {
+    text-align: center;
+    color: #fafafa;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    
+    background-color: black;
+    border-radius: 100px;
+    box-shadow: 30px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+    transition: all 0.3s ease-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card p {
+    float: center;
+    color: #a3a5ae;
+    font-size: 16px;
+}
+
+.image {
+    text-align: center;
+    margin-left: 80px;
+    float: center;
+    max-width: 150px;
+    max-height: 180px;
+}
+
+a:hover {
+    color: #fafafa;
+}
+
+a {
+    text-decoration: none;
+}
+
+.blue {
+    border-left: 3px solid #4895ff;
+    border-width: 15px;
+}
+
+.green {
+    border-left: 3px solid #3bb54a;
+    border-width: 15px;
+}
+
+.red {
+    border-left: 3px solid #b3404a;
+    border-width: 15px;
+}
+
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.699);
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    text-align: center;
+    padding-top: 1rem;
+
+  display: flex;
+}
+
+.cabeçalho-link {
+font-size: 25px;
+    margin-left: 700px;
+    float: right;
+    display: flex;
+    gap: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.cabeçalho-link a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover {
+    color: #2ecc71;
+    transition: 0.3s all;
+}
+
+
+button {
+    color: #2ecc71;
+    background: transparent;
+    border: solid 1px #2ecc71;
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+ 
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#redesocial{
+    font-size:20px;
+}
+
+
+
+#cores {
+    width: 14px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+h3 {
+    color: #fafafa;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+main {
+     font-size: 15px;
+    margin-left: 300px;
+    padding: 20px;
+    display: flex;
+}
+
+footer {
+    color: #FFF;
+    background-color: rgb(8, 8, 8);
+    padding: 20px;
+    font-family: 'Righteous', cursive;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-right: 50px;
+
+}
+
+footer h3 {
+    color: #FFF;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: #2ecc71;
+}
+
+span{
+    font-size: 10px;
+}
+.menu {
+    position: relative;
+    float: left;
+    >.menu-trigger {
+        margin-left: 150px;
+        font-size: 30px;
+        display: inline-grid;
+        place-items: center;
+        padding: 0.5em;
+        border: 1px solid green;
+        border-radius: 0.3em;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    >.menu-menu {
+        font-size: 14px;
+        margin-left: 150px;
+        border: 1px solid #CCC;
+        border-radius: 0.3em;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        margin-top: 0.5em;
+        transition: opacity 0.3s ease;
+
+        >li {
+            padding: 0.2em 0.4em;
+        }
+    }
+
+    &[data-aberto="true"] {
+        >.menu-trigger>.fa-plus {
+            display: none;
+        }
+
+        >.menu-menu {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &[data-aberto="false"] {
+        >.menu-trigger>.fa-minus {
+            display: none;
+        }
+
+        >.menu-menu {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s step-end;
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    .cabeçalho-link {
+        display: flex;
+        margin-right: 700px;
+    }
+
+    .row{
+        width: 5px;
+        display: block;
+        justify-items: initial;
+    }
+
+    .main{
+        font-size: 5px;
+        justify-items: initial;
+       
+    }
+
+    .menu{
+        width: 10px;
+        font-size: 10px;
+    }
+
+    .menu-menu {
+        font-size: 10px;
+    }
+}
